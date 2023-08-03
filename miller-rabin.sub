@@ -11,3 +11,6 @@ should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 transfer_input_files    = miller-rabin.py
 queue 10000
+
+# 1~10,000 까지 소수 검사함
+# 약 1시간 걸리므로 꼭 queue 를 바꿀 것!
