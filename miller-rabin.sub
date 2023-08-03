@@ -1,0 +1,13 @@
+JobBatchName = Group3_Miller_Rabin_Primenumber_$(Cluster)
+executable = run.sh
+arguments = $(Process)
+environment = "LANG=en_US.UTF-8"
+universe = vanilla
+output = mr.out
+error = mr.err
+log   = mr.log
+
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files    = miller-rabin.py
+queue 10000
